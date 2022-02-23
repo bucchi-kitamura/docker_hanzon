@@ -1,0 +1,6 @@
+version: "3.9" # docker-composeのバージョン https://docs.docker.jp/compose/compose-file.html
+services:
+  app:
+    build: ./infra/php
+    volumes: # オプション  https://docs.docker.jp/docker-for-mac/osxfs-caching.html
+      - ./src:/data
